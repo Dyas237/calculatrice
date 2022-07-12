@@ -1,0 +1,90 @@
+body
+{
+	display:flex;
+	justify-content:center;
+	align-items:center;
+	min-height:100vh;
+	width:100%;
+    background-color: turquoise;
+}
+*
+{
+	margin:0;
+	padding:0;
+	box-sizing:border-box;
+	translate:.5s all ease-in-out;	
+}
+.num
+{
+    display:grid;
+    grid-template-columns: repeat(4,1fr);
+}
+.num span
+{
+    place-items: center;
+    display: grid;
+    place-items: center;
+    height: 75px;
+    width: 75px;
+    background-color: transparent;
+    border: 0ch;
+    cursor: pointer;
+}
+.num span:hover
+{
+   background-color: tomato;
+}
+.num span:active
+{
+    background-color: yellowgreen;
+}
+.num .clear
+{
+    width: 100%;
+    grid-column: span 2;
+
+}
+.num .plus
+{
+    grid-row: span 2;
+    height: 100%;
+}
+.ecran
+{
+    border: 0;
+    outline: none;
+    text-align: right;
+    background-color: transparent;
+    width: 100%;
+    padding-right: 50px;
+    height: 40px;
+    font-size: 20px;
+    border-bottom: rgba(205, 208, 255, 0.781) solid 1px;
+}
+body::after
+{
+	content: '';
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    background-color: tomato;
+    clip-path: circle(20% at 20% 20% );
+}
+body::before
+{
+	content: '';
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    background-color: blue;
+    clip-path: circle(20% at 80% 80% );
+    left: 0ch;
+}
+section
+{
+    padding-top: 10px;
+    border: 1px solid black;
+    background-color: wheat;
+    box-shadow: 6px 6px 40px wheat ;
+}
+
