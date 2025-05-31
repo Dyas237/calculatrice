@@ -12,31 +12,31 @@
         <form action="" name="calc" class="calc">
         <input type="text" name="txt" class="ecran" value='0'>
         <div class="num">
-            <span onclick="calc.txt.value=''" class="clear">c</span>
-            <span onclick="calc.txt.value+='/'">/</span>
-            <span onclick="calc.txt.value+='*'">*</span>
-            <span onclick="calc.txt.value+='7'">7</span>
-            <span onclick="calc.txt.value+='8'">8</span>
-            <span onclick="calc.txt.value+='9'">9</span>
-            <span onclick="calc.txt.value+='-'">-</span>
-            <span onclick="calc.txt.value+='4'">4</span>
-            <span onclick="calc.txt.value+='5'">5</span>
-            <span onclick="calc.txt.value+='6'">6</span>
-            <span onclick="calc.txt.value+='+'" class="plus">+</span>
-            <span onclick="calc.txt.value+='1'">1</span>
-            <span onclick="calc.txt.value+='2'">2</span>
-            <span onclick="calc.txt.value+='3'">3</span>
-            <span onclick="calc.txt.value+='0'">0</span>
-            <span onclick="calc.txt.value+='00'">00</span>
-            <span onclick="calc.txt.value+=','">,</span>
-            <span onclick="calc.txt.value=eval(calc.txt.value)   
+            <button class="button clear button-clear" onclick="calc.txt.value=''">c</button>
+            <button class="button button-operator" onclick="calc.txt.value+='/'">/</button>
+            <button class="button button-operator" onclick="calc.txt.value+='*'">*</button>
+            <button class="button button-number" onclick="calc.txt.value+='7'">7</button>
+            <button class="button button-number" onclick="calc.txt.value+='8'">8</button>
+            <button class="button button-number" onclick="calc.txt.value+='9'">9</button>
+            <button class="button button-operator" onclick="calc.txt.value+='-'">-</button>
+            <button class="button button-number" onclick="calc.txt.value+='4'">4</button>
+            <button class="button button-number" onclick="calc.txt.value+='5'">5</button>
+            <button class="button button-number" onclick="calc.txt.value+='6'">6</button>
+            <button class="button plus button-operator" onclick="calc.txt.value+='+'">+</button>
+            <button class="button button-number" onclick="calc.txt.value+='1'">1</button>
+            <button class="button button-number" onclick="calc.txt.value+='2'">2</button>
+            <button class="button button-number" onclick="calc.txt.value+='3'">3</button>
+            <button class="button button-number" onclick="calc.txt.value+='0'">0</button>
+            <button class="button button-number" onclick="calc.txt.value+='00'">00</button>
+            <button class="button button-number" onclick="calc.txt.value+=','">,</button>
+            <button class="button button-equals" onclick="calc.txt.value=eval(calc.txt.value)
             if (affiche.value=='Infinity') {
                 affiche.value='MATH ERROR'
             }
             if (affiche.value=='undefined') {
                 affiche.value='0'
             }
-            ">=</span>
+            ">=</button>
         </div>
        
     </form>
